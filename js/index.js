@@ -143,9 +143,19 @@ navParent.append(newNavItem2);
 links.forEach(element => {
   element.style.color = "red"
 })
+
 h4Content.forEach( element => {
   element.style.color = "blue";
 })
 
 ctaH1.style.color = "seagreen"
 
+
+//stretch goal 
+const deleteImg = document.querySelector('#logo-img')
+
+deleteImg.addEventListener('click',function(e){
+  const btn = e.target.parentElement;
+
+  btn.parentNode.removeChild(btn);
+})
